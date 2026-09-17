@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen</title>
+    
+    <!-- ИСПРАВЛЕНО: Правильное подключение шрифтов Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header_container">
+            <h1 class="header_title">Lumen.</h1>
+            <nav class="header_mainmenu">
+                <ul>
+                    <li><a class="mainmenu_link" href="#">О нас</a></li>
+                    <li><a class="mainmenu_link" href="#">Каталог</a></li>
+                    <li><a class="mainmenu_link" href="#">Обратная связь</a></li>
+                </ul>
+            </nav>
+       </div>
+    </header>
+    <main>
+        <section class="section banner">
+            <div class="container">
+                2
+            </div>
+        </section>
+        <section class="section about">
+          <div class="container">
+            3
+          </div>
+        </section>
+        <section class="section catalog">
+            <div class="container">
+                <h2 class="catakog__title">Каталог</h2>
+                <div class="catalog">
+                    <div class="catalog__wrapper">
+                        <div class="catalog__container">
+                            <div class="catalog__card">
+                                <img src="img/card1.jpg" alt="Товар 1" class="card__img">
+                                <h3>Товар 1</h3>
+                            </div>
+                            <div class="catalog__card">
+                                <img src="img/card2.jpg" alt="Товар 2" class="card__img">
+                                <h3>Товар 2</h3>
+                            </div>
+                            <div class="catalog__card">
+                                <img src="img/card3.jpg" alt="Товар 3" class="card__img">
+                                <h3>Товар 3</h3>
+                            </div>
+                            <div class="catalog__card">
+                                <img src="img/card4.jpg" alt="Товар 4" class="card__img">
+                                <h3>Товар 4</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__button">
+                        здесь будут кнопки
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section feeback">
+            <div class="container">
+                5
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="section">
+            <div class="container">
+                6
+            </div>
+        </section>
+        <section class="section copyringht">
+            <div class="container">
+                7
+            </div>
+        </section>
+    </footer> 
+    <style>
+        :root {
+            --main-font-family: 'Inter', sans-serif;
+            --backround-color: #FFF5F0; 
+            --primary-text-color: #333333; 
+            --accent-orange: #FF6600; 
+        }
+        body {
+            margin: 0;
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            font-family: var(--main-font-family);
+            background-color: var(--backround-color);
+        }
+        main {
+            flex-grow: 1;
+        }
+        .container {
+            max-width: 1200px;                        
+            margin: 0 auto;                           
+            background-color: rgba(240, 128, 128, 0.4); 
+            min-height: 40px;                         
+            outline: 1px solid red;                  
+        }
+        .header {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+            background-color: #ffffff; 
+        }
+        .header_container {
+            display: flex;
+            flex-direction: row;            
+            justify-content: space-between; 
+            align-items: center;            
+            min-height: 80px;               
+        }
+        .header_mainmenu ul {
+            display: flex;
+            flex-direction: row; 
+            align-items: center; 
+            gap: 24px;           
+            list-style: none;    
+            margin: 0;
+            padding: 0;
+        }
+        .header_title {
+            color: var(--primary-text-color); 
+            font-size: 28px;                  
+            font-weight: 700;                 
+            margin: 0;
+        }
+        .mainmenu_link {
+            color: var(--primary-text-color); 
+            text-decoration: none;            
+            font-size: 16px;
+            transition: color 0.2s ease-in-out; 
+        }
+        .mainmenu_link:hover,
+        .mainmenu_link:focus,
+        .mainmenu_link:active {
+            color: var(--accent-orange);      
+            outline: none;                    
+        }
+        .catalog__container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .catalog__card {
+            width: 280px;
+            background-color: #ffffff;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .card__img {
+            width: 100%;
+            height: auto; /* ИСПРАВЛЕНО: картинка будет сохранять пропорции */
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</body>
+</html>
+
